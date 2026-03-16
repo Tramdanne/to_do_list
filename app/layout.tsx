@@ -9,7 +9,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="vi">
-      <body className="gap-2 flex flex-col items-center justify-center rounded-lg mt-10">
+      <body className="gap-2 flex flex-col items-center justify-center">
         <Header />
         <main className="w-250 flex justify-center items-center">
           {children}

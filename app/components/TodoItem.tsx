@@ -47,7 +47,7 @@ export default function TodoItem({
   return (
     <>
       {!isEditing ? (
-        <div className="group flex items-center gap-3 bg-sky-600/50 border border-sky-800 p-4 rounded-xl mb-3 hover:border-zinc-400 transition-all">
+        <div className="group flex items-center gap-3 bg-white border border-sky-800 p-4 rounded-xl mb-3 hover:border-zinc-400 transition-all">
           <button
             onClick={() => onToggleComplete(task.id)}
             className={`w-6 h-6 rounded-full border-2 flex items-center justify-center transition-all shrink-0 ${
@@ -89,7 +89,7 @@ export default function TodoItem({
             value={editText}
             onChange={(e) => setEditText(e.target.value)}
             onKeyPress={handleKeyPress}
-            className="flex-1 bg-sky-800 border border-sky-500 rounded px-3 py-2 text-white focus:outline-none focus:border-cyan-400"
+            className="flex-1 bg-white border border-sky-500 rounded px-3 py-2 text-black focus:outline-none"
             autoFocus
           />
           <button
@@ -100,7 +100,7 @@ export default function TodoItem({
           </button>
           <button
             onClick={handleCancel}
-            className="bg-sky-600 hover:bg-sky-400 text-white px-3 py-2 rounded text-sm transition-all"
+            className="bg-sky-600 hover:bg-sky-500 text-white px-3 py-2 rounded text-sm transition-all"
           >
             Hủy
           </button>
@@ -109,8 +109,8 @@ export default function TodoItem({
 
       {showConfirm && (
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50">
-          <div className="bg-sky-600 border border-sky-400 rounded-lg p-6 max-w-sm mx-4">
-            <p className="text-white mb-6">
+          <div className="bg-white border rounded-lg p-6 max-w-sm mx-4">
+            <p className="text-black mb-6">
               Bạn chắc chắn muốn xóa "{task.text}" không?
             </p>
             <div className="flex gap-3 justify-end">

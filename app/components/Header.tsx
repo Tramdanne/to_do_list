@@ -12,7 +12,7 @@ function Header() {
           height={50}
           className="rounded-full aspect-square object-cover"
         />
-        <h1 className="text-xl font-bold text-white text-shadow">TaskFlow</h1>
+        <h1 className="text-xl font-bold text-white text-shadow">TO DO LIST</h1>
       </div>
     </div>
   );

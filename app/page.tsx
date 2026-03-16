@@ -63,7 +63,7 @@ export default function Home() {
     <main className="w-full flex flex-col">
       <div className="justify-center item-center gap-2 flex flex-col w-full">
         <div className="max-w-2xl mx-auto w-full px-4">
-          <h1 className="text-4xl font-bold mb-2">Danh sách công việc</h1>
+          <h1 className="text-3xl font-bold mb-2">Danh sách công việc</h1>
           <p className="text-black mb-10">
             Quản lý và theo dõi tiến độ của bạn
           </p>
@@ -87,7 +87,9 @@ export default function Home() {
 
           {progress === 100 && tasks.length > 0 && (
             <p className="text-center text-black mt-6">
-              Tuyệt vời! Bạn đã hoàn thành tất cả công việc!
+              Chúc mừng bạn đã hoàn thành tất cả công việc!
+              <br />
+              Hãy thêm nhiều công việc mới để tiếp tục nhé!
             </p>
           )}
         </div>

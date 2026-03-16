@@ -11,7 +11,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="vi">
-      <body className="bg-zinc-600 text-white gap-2 flex flex-col items-center justify-center border border-zinc-800 rounded-lg p-6 mt-10">
+      <body className="gap-2 flex flex-col items-center justify-center border rounded-lg mt-10">
         <Header />
         <main className="w-250 flex justify-center items-center">
           {children}

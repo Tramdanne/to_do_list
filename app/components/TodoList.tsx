@@ -21,7 +21,7 @@ export default function TodoList({
     return (
       <div className="text-center py-12">
         <p className="text-white text-lg">
-          Chưa có công việc nào. Hãy thêm một cái đi!
+          Hãy thêm công việc mới để bắt đầu quản lý danh sách của bạn!
         </p>
       </div>
     );

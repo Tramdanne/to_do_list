@@ -26,13 +26,14 @@ export default function TodoInput({ onAddTask }: TodoInputProps) {
         value={input}
         onChange={(e) => setInput(e.target.value)}
         onKeyPress={handleKeyPress}
-        className="flex-1 bg-sky-300 border border-sky-400 rounded-lg px-4 py-3 text-white placeholder-sky-200 focus:outline-none focus:border-cyan-500 transition-colors"
+        className="flex-1 bg-white border border-sky-400 rounded-lg px-4 py-3 text-black placeholder:text-gray-400 focus:outline-none focus:border-cyan-500 transition-colors"
       />
       <button
         onClick={handleSubmit}
         className="bg-sky-500 hover:bg-sky-600 text-white px-6 py-3 rounded-lg font-medium flex items-center gap-2 transition-all"
       >
-        <span>+</span> Thêm
+        <span>+</span>
+        Thêm
       </button>
     </div>
   );

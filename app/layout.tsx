@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/Header";
-import Process from "./components/Process";
-import TodoInput from "./components/TodoInput";
 
 export default function RootLayout({
   children,
